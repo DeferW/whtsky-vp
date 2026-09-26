@@ -153,7 +153,7 @@ h1, h2, h3, p, li, .text-link, .staff-card { overflow-wrap: anywhere; }
   .brand-caption { display: none; }
 }
 @media (max-width: 860px) {
-  .header-inner nav { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; }
+  .header-inner nav { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; }
   .rules-nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 16px; max-height: none; overflow: visible; }
   .rules-nav a { min-height: 44px; padding-block: 10px; }
   .rule-section ol { font-size: 1rem; line-height: 1.7; }
@@ -173,4 +173,23 @@ h1, h2, h3, p, li, .text-link, .staff-card { overflow-wrap: anywhere; }
 @media (max-height: 500px) and (orientation: landscape) {
   .hero { padding-block: 36px; }
   .rules-nav { position: static; max-height: none; }
+}
+
+.guide-connection { margin-bottom: 38px; }
+.guide-article p { color: var(--muted); }
+.guide-article a:not(.button) { text-decoration: underline; text-underline-offset: 3px; }
+.guide-article strong { color: var(--text); font-weight: 600; }
+.guide-figure { margin: 26px 0; }
+.guide-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 5px; }
+.guide-figure figcaption, .guide-placeholder figcaption { font-size: 13px; color: var(--muted); margin-top: 10px; }
+.guide-placeholder { display: grid; place-content: center; min-height: 170px; padding: 24px; margin: 26px 0; text-align: center; border: 1px dashed var(--line); border-radius: 5px; }
+.guide-placeholder span { font-size: 14px; }
+.guide-article details { margin: 20px 0; padding: 16px; border: 1px solid var(--line); border-radius: 5px; }
+.guide-article summary { cursor: pointer; min-height: 44px; padding-block: 9px; }
+.guide-article summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+kbd, code { font-size: .9em; overflow-wrap: anywhere; }
+kbd { border: 1px solid var(--line); padding: 2px 7px; border-radius: 4px; }
+@media (max-width: 480px) {
+  .header-inner nav { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .guide-placeholder { min-height: 130px; padding: 16px; }
 }

@@ -9,10 +9,10 @@
       return url.protocol === 'https:' ? url.href : null;
     } catch { return null; }
   };
-  const routes = [['home', '', 'Главная'], ['rules', 'rules/', 'Правила'], ['contacts', 'contacts/', 'Контакты'], ['wiki', 'wiki/', 'Вики']];
+  const routes = [['home', '', 'Главная'], ['play', 'wiki/how-to-play/', 'Как играть'], ['rules', 'rules/', 'Правила'], ['contacts', 'contacts/', 'Контакты'], ['wiki', 'wiki/', 'Вики']];
   const header = document.querySelector('[data-header]');
-  header.innerHTML = `<div class="container header-inner"><a class="brand" href="${root}" aria-label="На главную"><span class="brand-mark" aria-hidden="true"><img src="${root}assets/images/logo-white.png" alt="" width="62" height="62"></span><span data-name></span><span class="brand-caption">VANILLA PROJECT</span></a><nav aria-label="Основная навигация">${routes.map(([id, path, label]) => `<a href="${root}${path}" ${page === id ? 'aria-current="page"' : ''}>${label}${id === 'wiki' ? '<span class="nav-tag">скоро</span>' : ''}</a>`).join('')}</nav><button class="theme-toggle" type="button" data-theme-toggle aria-label="Светлая тема">☀</button></div>`;
-  document.querySelector('[data-footer]').innerHTML = `<div class="container footer-inner"><span>© ${new Date().getFullYear()} <span data-name></span> Vanilla Project</span><a href="https://www.complementary.dev/shaders/" target="_blank" rel="noopener noreferrer">Фоны: Complementary Shaders ↗</a><span>Не связан с Mojang или Microsoft.</span></div>`;
+  header.innerHTML = `<div class="container header-inner"><a class="brand" href="${root}" aria-label="На главную"><span class="brand-mark" aria-hidden="true"><img src="${root}assets/images/logo-white.png" alt="" width="62" height="62"></span><span data-name></span><span class="brand-caption">VANILLA PROJECT</span></a><nav aria-label="Основная навигация">${routes.map(([id, path, label]) => `<a href="${root}${path}" ${page === id ? 'aria-current="page"' : ''}>${label}</a>`).join('')}</nav><button class="theme-toggle" type="button" data-theme-toggle aria-label="Светлая тема">☀</button></div>`;
+  document.querySelector('[data-footer]').innerHTML = `<div class="container footer-inner"><span>© ${new Date().getFullYear()} <span data-name></span> Vanilla Project</span><a href="https://www.complementary.dev/shaders/" target="_blank" rel="noopener noreferrer">Фоны: Complementary Shaders ↗</a><span data-address></span><span data-discord>Discord</span><span>Не связан с Mojang или Microsoft.</span></div>`;
   const themeButton = document.querySelector('[data-theme-toggle]');
   const updateThemeButton = () => {
     const light = document.documentElement.dataset.theme === 'light';

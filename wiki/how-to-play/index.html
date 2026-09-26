@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Как играть — WHTSKY Vanilla Project</title>
+  <meta name="description" content="Как зайти на WHTSKY: ElyPrismLauncher, оффлайн-аккаунт, Minecraft 26.3 с Fabric и Simple Voice Chat.">
+  <script src="../../assets/theme.js"></script><meta name="theme-color" content="#111815">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../../assets/style.css">
+  <script src="../../assets/config.js" defer></script><script src="../../assets/site.js" defer></script>
+</head>
+<body data-page="play" data-root="../../" data-title="Как играть">
+<a class="skip-link" href="#main">К содержимому</a><header data-header></header>
+<main id="main" class="container">
+  <div class="page-intro"><div class="page-index"><a href="../../">Главная</a> / <a href="../">Вики</a> / Как играть</div><h1>Как играть</h1><p>Лаунчер, сборка и подключение к серверу.</p></div>
+  <section class="join-panel guide-connection" aria-label="Подключение">
+    <div><h2>Discord</h2><p>Подайте заявку в вайтлист и дождитесь одобрения. В Discord — новости, общение и помощь со входом.</p><a class="button primary" data-discord href="https://discord.gg/Nja6JUUgZV" target="_blank" rel="noopener noreferrer">Открыть Discord ↗</a></div>
+    <div class="server-box"><span class="server-label">Minecraft Java Edition · <span data-version>26.3</span></span><strong class="server-address" data-address>whtsky.mineserv.ru</strong><button class="button" type="button" data-copy disabled>Скопировать адрес</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+  </section>
+  <div class="rules-layout guide-layout">
+    <nav class="rules-nav" aria-label="Шаги установки"><a href="#launcher">01 · Лаунчер</a><a href="#account">02 · Ник</a><a href="#modpack">03 · Minecraft</a><a href="#voicechat">04 · Голосовой чат</a><a href="#connect">05 · Вход на сервер</a><a href="#microphone">06 · Микрофон</a></nav>
+    <div class="guide-article">
+      <section class="rule-section" id="launcher"><h2><span>01</span>Скачайте лаунчер</h2>
+        <p>Используем ElyPrismLauncher. На официальном сайте он теперь называется <strong>PineconeMC</strong> — это тот же проект.</p>
+        <ol><li>Откройте <a href="https://elyprismlauncher.github.io/download/" target="_blank" rel="noopener noreferrer">страницу скачивания</a> и выберите свою операционную систему.</li><li>Для обычного компьютера на Windows с процессором Intel или AMD выберите <strong>Windows → x64 → Setup</strong>. Для ARM-компьютера нужна ARM64-версия.</li><li>Запустите установщик, завершите установку и откройте лаунчер. Выберите русский язык. Если мастер предлагает настройку Java, используйте автоматический подбор.</li></ol>
+        <figure class="guide-placeholder"><span>Скриншот появится позже</span><figcaption>Выбор загрузки и первый запуск лаунчера</figcaption></figure>
+      </section>
+      <section class="rule-section" id="account"><h2><span>02</span>Создайте оффлайн-аккаунт</h2>
+        <ol><li>Откройте меню аккаунтов в правом верхнем углу лаунчера и перейдите к управлению аккаунтами.</li><li>Выберите добавление <strong>оффлайн-аккаунта</strong> (Offline). Название пункта может отличаться в зависимости от языка интерфейса.</li><li>Введите ник, который указали в заявке на вайтлист. Проверьте написание и регистр букв.</li><li>Сохраните аккаунт и выберите его для запуска игры.</li></ol>
+        <p>Оффлайн-аккаунт — локальный профиль лаунчера. Не меняйте ник после одобрения заявки без согласования с администрацией.</p>
+        <figure class="guide-placeholder"><span>Скриншот появится позже</span><figcaption>Создание оффлайн-аккаунта и выбор ника</figcaption></figure>
+      </section>
+      <section class="rule-section" id="modpack"><h2><span>03</span>Установите Minecraft 26.3</h2>
+        <p>Проще установить готовую сборку <a href="https://modrinth.com/modpack/fabulously-optimized" target="_blank" rel="noopener noreferrer">Fabulously Optimized</a>. В ней уже есть Fabric и моды для оптимизации.</p>
+        <ol><li>Нажмите <strong>«Добавить экземпляр»</strong> и выберите <strong>Modrinth</strong> слева.</li><li>Найдите <strong>Fabulously Optimized</strong>.</li><li>В поле «Выбранная версия» выберите выпуск именно для <strong>26.3</strong>. На скриншоте это <strong>15.0.0-alpha.3 for 26.3</strong>. Alpha — предварительная версия; если доступен стабильный выпуск для 26.3, выбирайте его.</li><li>Нажмите «ОК» и дождитесь установки. Запустите экземпляр, чтобы лаунчер скачал файлы игры. После появления главного меню закройте Minecraft перед установкой голосового мода.</li></ol>
+        <figure class="guide-figure"><a href="modpack.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот установки сборки в полном размере"><img src="modpack.png" alt="Добавление Fabulously Optimized через Modrinth: в списке выбрана версия для Minecraft 26.3" width="1119" height="750" loading="lazy"></a><figcaption>Выбор сборки и версии 26.3. Нажмите на изображение, чтобы увеличить.</figcaption></figure>
+        <details><summary>Вариант без готовой сборки</summary><p>Добавьте обычный экземпляр Minecraft 26.3. Откройте «Изменить» → «Версия» → установку Fabric и выберите совместимый Fabric Loader. Затем установите Simple Voice Chat по следующему шагу.</p></details>
+      </section>
+      <section class="rule-section" id="voicechat"><h2><span>04</span>Добавьте Simple Voice Chat</h2>
+        <ol><li>Откройте <a href="https://modrinth.com/plugin/simple-voice-chat" target="_blank" rel="noopener noreferrer">Simple Voice Chat на Modrinth</a>.</li><li>В разделе версий выберите <strong>Minecraft 26.3</strong> и загрузчик <strong>Fabric</strong>, затем скачайте файл <code>.jar</code>. Несмотря на слово «plugin» в адресе страницы, для игры нужен мод Fabric, а не серверный плагин Paper или Bukkit.</li><li>В лаунчере выберите установленную сборку → <strong>«Изменить» → «Моды» → «Добавить файл»</strong>. Укажите скачанный <code>.jar</code>; распаковывать его не нужно.</li><li>Убедитесь, что Simple Voice Chat появился в списке и включён галочкой. Не устанавливайте несколько его версий одновременно.</li></ol>
+        <figure class="guide-figure"><a href="voicechat.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть скриншот установки голосового мода в полном размере"><img src="voicechat.png" alt="Раздел Моды: справа кнопка Добавить файл, в списке включён Simple Voice Chat для 26.3" width="1178" height="677" loading="lazy"></a><figcaption>Simple Voice Chat в списке модов. Остальные моды на скриншоте устанавливать по этому списку не нужно.</figcaption></figure>
+        <p>Также можно установить мод через «Моды» → «Скачивание модов» → Modrinth, проверив версию игры и загрузчик.</p>
+      </section>
+      <section class="rule-section" id="connect"><h2><span>05</span>Зайдите на сервер</h2>
+        <ol><li>Прочитайте <a href="../../rules/">правила</a> и дождитесь одобрения заявки в Discord.</li><li>Запустите установленный экземпляр Minecraft с выбранным оффлайн-аккаунтом.</li><li>Откройте <strong>«Сетевая игра» → «Добавить сервер»</strong>.</li><li>Укажите любое название, например WHTSKY. В поле адреса вставьте <strong data-address>whtsky.mineserv.ru</strong> — без <code>https://</code>.</li><li>Нажмите «Готово», выберите сервер и подключитесь.</li></ol>
+        <p>Если появилась ошибка вайтлиста, проверьте выбранный ник и статус заявки. Если версия не совпадает — убедитесь, что запущена именно 26.3.</p>
+        <figure class="guide-placeholder"><span>Скриншот появится позже</span><figcaption>Добавление сервера whtsky.mineserv.ru</figcaption></figure>
+      </section>
+      <section class="rule-section" id="microphone"><h2><span>06</span>Настройте микрофон</h2>
+        <ol><li>После входа нажмите <kbd>V</kbd> — стандартную клавишу меню Simple Voice Chat.</li><li>Пройдите мастер настройки: выберите микрофон и наушники, затем режим передачи голоса. Для начала удобно использовать разговор по нажатию кнопки.</li><li>Назначьте кнопку разговора и проверьте микрофон в настройках мода. Разрешите доступ к микрофону в операционной системе, если она его запрашивает.</li></ol>
+        <p>Если меню не открывается, проверьте назначение клавиш в Minecraft. Если мод сообщает, что голосовой чат не подключён, напишите в Discord: для работы нужна настройка и на стороне сервера.</p>
+        <figure class="guide-placeholder"><span>Скриншот появится позже</span><figcaption>Выбор микрофона и кнопки разговора</figcaption></figure>
+        <a class="text-link" href="https://modrepo.de/minecraft/voicechat/wiki/client_setup" target="_blank" rel="noopener noreferrer">Инструкция Simple Voice Chat ↗</a>
+      </section>
+    </div>
+  </div>
+</main><footer data-footer></footer><noscript><a href="../">Вики</a> · <a href="../../">Главная</a></noscript>
+</body></html>
