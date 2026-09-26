@@ -193,3 +193,7 @@ kbd { border: 1px solid var(--line); padding: 2px 7px; border-radius: 4px; }
   .header-inner nav { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .guide-placeholder { min-height: 130px; padding: 16px; }
 }
+
+.guide-shot { display: block; position: relative; width: fit-content; max-width: 100%; }
+.guide-shot img { max-width: 100%; }
+.guide-marker { position: absolute; border: 2px solid #ff4545; box-shadow: 0 0 0 1px #26000080; border-radius: 3px; pointer-events: none; }
