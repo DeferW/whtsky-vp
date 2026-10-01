@@ -1,10 +1,10 @@
-// Заполните данные здесь: они автоматически появятся на всех страницах.
+// Общие данные сайта.
 window.SITE_CONFIG = {
-  name: 'WHTSKY Vanilla Project',
+  name: 'WHTSKY Servers',
   brand: 'WHTSKY',
   serverAddress: 'whtsky.mineserv.ru',
-  version: '26.3',
-  discordUrl: 'https://discord.gg/Nja6JUUgZV',
-  // Пример: { nickname: 'YourNickname', role: 'Администратор', discordUrl: 'https://discord.com/users/USER_ID' }
-  staff: [],
+  version: '1.21.1',
+  loader: 'NeoForge',
+  season: 2,
+  discordUrl: 'https://discord.gg/YwaqcRJRg9',
 };
