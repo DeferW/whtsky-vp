@@ -7,4 +7,6 @@ window.SITE_CONFIG = {
   loader: 'NeoForge',
   season: 2,
   discordUrl: 'https://discord.gg/YwaqcRJRg9',
+  // Публичная HTTPS-ссылка на ZIP (например, файл GitHub Releases).
+  modpackUrl: '',
 };

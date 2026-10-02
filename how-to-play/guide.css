@@ -1,0 +1,37 @@
+.guide-lead { margin-top:20px; color:var(--muted); }
+.guide-toc { display:flex; flex-wrap:wrap; gap:8px 24px; padding:24px 0; border-bottom:1px solid var(--line); }
+.guide-toc a { padding:8px 0; font-size:13px; }
+.guide-body { max-width:880px; margin-inline:auto; }
+.guide-step { padding:48px 0; border-bottom:1px solid var(--line); scroll-margin-top:24px; }
+.guide-step:last-child { border:0; margin-bottom:32px; }
+.step-heading { display:flex; align-items:center; gap:18px; margin-bottom:24px; }
+.step-number { font:500 26px 'Oswald',sans-serif; color:var(--accent); }
+.guide-step h2 { font-size:clamp(28px,4vw,38px); }
+.guide-step > h2 { margin:14px 0 24px; }
+.guide-step h3 { margin:32px 0 12px; font-size:21px; line-height:1.35; }
+.guide-step p { margin-bottom:16px; }
+.guide-step p a:not(.button),.mod-list a { text-decoration:underline; text-underline-offset:4px; }
+.guide-step li { margin-bottom:12px; }
+.guide-step ol { padding-left:24px; }
+.guide-step figure { margin:24px 0 32px; }
+.guide-image { position:relative; display:block; border:1px solid var(--line); background:#171717; }
+.guide-image img { width:100%; height:auto; display:block; }
+.guide-mark { position:absolute; border:3px solid #ff4242; border-radius:3px; box-shadow:0 0 0 1px #0008; pointer-events:none; }
+figcaption { color:var(--muted); font-size:12px; line-height:1.6; padding-top:10px; }
+figcaption span { display:block; }
+.pack-download { padding:26px; margin:20px 0 26px; border:1px solid var(--line); border-left:3px solid var(--accent); background:var(--panel); }
+.pack-download h3 { margin:12px 0; }
+.pack-download .button { margin:4px 0 12px; }
+.guide-small { color:var(--muted); font-size:13px; }
+.guide-note { border-left:3px solid var(--accent); padding:12px 18px; background:var(--panel); color:var(--muted); }
+.guide-details { border:1px solid var(--line); padding:18px 22px; margin-top:24px; background:var(--panel); }
+.guide-details summary { cursor:pointer; font-weight:500; min-height:28px; }
+.guide-details summary:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
+.guide-details[open] summary { margin-bottom:20px; }
+.guide-details p:last-child { margin-bottom:0; }
+.mod-list { font-size:14px; }
+.mod-list li { padding:12px 0; border-top:1px solid var(--line); overflow-wrap:anywhere; }
+.mod-list code { display:block; font-size:11px; color:var(--muted); margin:6px 0; }
+.guide-step video { display:block; width:100%; height:auto; background:#000; margin:24px 0 12px; }
+kbd { border:1px solid var(--line); border-bottom-width:3px; padding:1px 7px; border-radius:4px; font:inherit; font-size:.9em; }
+@media(max-width:700px) { .guide-step { padding:34px 0; }.guide-step h3 { font-size:19px; }.step-heading { gap:12px; }.pack-download,.guide-details { padding:20px; }.guide-toc { gap:4px 18px; }.guide-mark { border-width:2px; }.guide-page .connection-action { margin-left:0; } }
