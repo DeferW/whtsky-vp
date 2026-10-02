@@ -8,5 +8,5 @@ window.SITE_CONFIG = {
   season: 2,
   discordUrl: 'https://discord.gg/YwaqcRJRg9',
   // Публичная HTTPS-ссылка на ZIP (например, файл GitHub Releases).
-  modpackUrl: '',
+  modpackUrl: 'https://github.com/DeferW/whtsky-vp/releases/download/s2-v1/WHTSKY.S2.1.21.1.zip',
 };
